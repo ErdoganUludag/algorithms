@@ -1,23 +1,16 @@
-import random
+array = [5, 4, 3, 2, 1]
 
 
-def bubbleSort(array):
+def bubble_sort(array):
     length = len(array)
-    sorted = False
-
     for i in range(length):
-        sorted = True
-
         for j in range(length - 1):
             if array[j] > array[j + 1]:
-                array[j], array[j + 1] = array[j + 1], array[j]
-                sorted = False
+                # array[j], array[j + 1] = array[j + 1], array[j]
+                temp = array[j]
+                array[j] = array[j + 1]
+                array[j + 1] = temp
 
-        if sorted:
-            break
 
-
-list = [random.randint(0, 100) for _ in range(100)]
-
-bubbleSort(list)
-print(list)
+bubble_sort(array)
+print(array)
