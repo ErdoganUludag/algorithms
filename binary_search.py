@@ -17,6 +17,6 @@ def binary_search(array, target):
     return -1
 
 
-index = binary_search(array, 92)
+index = binary_search(array, 26)
 if index != -1:
-    print(array[index])
+    print(index)

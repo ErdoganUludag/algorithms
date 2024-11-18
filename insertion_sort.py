@@ -1,4 +1,4 @@
-array = [2, 1, 3, 4, 5]
+array = [5, 4, 3, 2, 1]
 
 
 def insertion_sort(array):
@@ -10,6 +10,7 @@ def insertion_sort(array):
             if array[j] > array[j + 1]:
                 array[j], array[j + 1] = array[j + 1], array[j]
                 sorted = False
+                print(array)
             j = j - 1
 
         if sorted:
